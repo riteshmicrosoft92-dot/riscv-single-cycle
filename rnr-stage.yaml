@@ -1,5 +1,5 @@
 yaml_version: 1
-stage: decode
+stage: execute
 modules:
   if_stage: {source_files: [IF_Stage/rtl.sv]}
   decoder: {source_files: [Decoder/rtl.sv]}
@@ -7,3 +7,6 @@ modules:
   register_file: {source_files: [Register_File/rtl.sv]}
   main_control: {source_files: [Main_Control/rtl.sv]}
   id_stage: {source_files: [ID_Stage/rtl.sv]}
+  alu: {source_files: [ALU/rtl.sv]}
+  alu_control: {source_files: [ALU_Control/rtl.sv]}
+  ex_stage: {source_files: [EX_Stage/rtl.sv]}
